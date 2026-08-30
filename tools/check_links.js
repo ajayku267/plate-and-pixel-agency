@@ -3,6 +3,34 @@ const path = require('path');
 
 const rootDir = path.join(__dirname, '..');
 
+// Parse _redirects rules
+const redirectsPath = path.join(rootDir, '_redirects');
+const rewriteRules = []; // rules with status 200
+const redirectRules = []; // rules with status 301/302
+
+if (fs.existsSync(redirectsPath)) {
+  const lines = fs.readFileSync(redirectsPath, 'utf8').split('\n');
+  lines.forEach(line => {
+    // Strip comments and trim
+    const trimmed = line.split('#')[0].trim();
+    if (!trimmed) return;
+    
+    // Split by whitespace
+    const parts = trimmed.split(/\s+/);
+    if (parts.length >= 2) {
+      const fromPath = parts[0];
+      const toPath = parts[1];
+      const status = parts[2] || '301'; // default is 301 redirect
+
+      if (status === '200') {
+        rewriteRules.push({ from: fromPath, to: toPath });
+      } else {
+        redirectRules.push({ from: fromPath, to: toPath, status });
+      }
+    }
+  });
+}
+
 function getHtmlFiles(dir) {
   let results = [];
   const list = fs.readdirSync(dir);
@@ -29,7 +57,6 @@ htmlFiles.forEach(htmlFile => {
   const relativePath = path.relative(rootDir, htmlFile);
   const currentDir = path.dirname(htmlFile);
 
-  // Helper to check if file exists
   function checkPath(link, tag, attr) {
     if (!link) return;
     
@@ -38,19 +65,26 @@ htmlFiles.forEach(htmlFile => {
       return;
     }
 
-    let targetPath;
-    if (link.startsWith('/')) {
-      // Absolute path from root
-      targetPath = path.join(rootDir, link);
-    } else {
-      // Relative path from current HTML file
-      targetPath = path.join(currentDir, link);
+    // Resolve URL with Netlify rewrites (status 200)
+    let resolvedLink = link;
+    // Strip search/hash for mapping lookup
+    const cleanLink = link.split('#')[0].split('?')[0];
+
+    // Find if there's a 200 rewrite rule matching this path
+    const matchingRewrite = rewriteRules.find(r => r.from === cleanLink || r.from === cleanLink + '/' || r.from + '/' === cleanLink);
+    if (matchingRewrite) {
+      resolvedLink = matchingRewrite.to;
     }
 
-    // Strip search query/hash from the local link check
+    let targetPath;
+    if (resolvedLink.startsWith('/')) {
+      targetPath = path.join(rootDir, resolvedLink);
+    } else {
+      targetPath = path.join(currentDir, resolvedLink);
+    }
+
     targetPath = targetPath.split('#')[0].split('?')[0];
 
-    // If it points to a directory (like /services/), append index.html
     if (fs.existsSync(targetPath) && fs.statSync(targetPath).isDirectory()) {
       targetPath = path.join(targetPath, 'index.html');
     }
@@ -61,34 +95,27 @@ htmlFiles.forEach(htmlFile => {
     }
   }
 
-  // Regex to extract various links
-  // 1. Anchor tags href
+  // Extract links
   const aMatches = content.matchAll(/<a\s+[^>]*href=["']([^"']*)["']/gi);
   for (const match of aMatches) {
     checkPath(match[1], 'a', 'href');
   }
 
-  // 2. Link tags href (stylesheets, canonicals, etc.)
   const linkMatches = content.matchAll(/<link\s+[^>]*href=["']([^"']*)["']/gi);
   for (const match of linkMatches) {
-    // Only check stylesheets and ignore canonicals that point to production domain
     const isStyle = match[0].includes('rel="stylesheet"') || match[0].includes('rel=\'stylesheet\'');
-    const href = match[1];
     if (isStyle) {
-      checkPath(href, 'link', 'href');
+      checkPath(match[1], 'link', 'href');
     }
   }
 
-  // 3. Script tags src
   const scriptMatches = content.matchAll(/<script\s+[^>]*src=["']([^"']*)["']/gi);
   for (const match of scriptMatches) {
     checkPath(match[1], 'script', 'src');
   }
 
-  // 4. Image tags src
   const imgMatches = content.matchAll(/<img\s+[^>]*src=["']([^"']*)["']/gi);
   for (const match of imgMatches) {
-    // Skip external image links
     checkPath(match[1], 'img', 'src');
   }
 });

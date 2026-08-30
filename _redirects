@@ -2,21 +2,35 @@
 # PLATES & PIXELS — NETLIFY REDIRECTS CONFIGURATION
 # ============================================================
 
-# Redirect legacy/clean URLs to physical blog HTML files (301 Permanent Redirect)
-/blog/why-every-cafe-needs-a-website/   /blog/why-cafe-needs-website.html  301
-/blog/restaurant-website-features/      /blog/7-things-restaurant-website-needs.html 301
-/blog/restaurant-website-vs-instagram/  /blog/restaurant-website-vs-instagram.html 301
-/blog/restaurant-website-cost/          /blog/restaurant-website-cost.html 301
-/blog/restaurant-online-menu/           /blog/how-to-create-online-menu.html 301
-/blog/restaurant-website-design-mistakes/ /blog/restaurant-website-mistakes.html 301
-/blog/how-to-get-more-cafe-customers/   /blog/get-more-customers-cafe.html 301
-/blog/restaurant-website-on-a-budget/   /blog/restaurant-website-on-budget.html 301
-/blog/restaurant-seo-guide/             /blog/restaurant-seo-guide.html 301
-/blog/restaurant-online-menu-benefits/  /blog/why-restaurants-need-online-menu.html 301
-/blog/restaurant-website-features-guide/ /blog/what-should-restaurant-website-include.html 301
-/blog/professional-restaurant-website-benefits/ /blog/professional-website-for-restaurant.html 301
+# 1. Redirect physical flat HTML files to clean canonical URLs (301 Permanent Redirect)
+/blog/why-cafe-needs-website.html                 /blog/why-every-cafe-needs-a-website/ 301
+/blog/7-things-restaurant-website-needs.html      /blog/restaurant-website-features/ 301
+/blog/restaurant-website-vs-instagram.html        /blog/restaurant-website-vs-instagram/ 301
+/blog/restaurant-website-cost.html                /blog/restaurant-website-cost/ 301
+/blog/how-to-create-online-menu.html              /blog/restaurant-online-menu/ 301
+/blog/restaurant-website-mistakes.html            /blog/restaurant-website-design-mistakes/ 301
+/blog/get-more-customers-cafe.html                /blog/how-to-get-more-cafe-customers/ 301
+/blog/restaurant-website-on-budget.html           /blog/restaurant-website-on-a-budget/ 301
+/blog/restaurant-seo-guide.html                   /blog/restaurant-seo-guide/ 301
+/blog/why-restaurants-need-online-menu.html       /blog/restaurant-online-menu-benefits/ 301
+/blog/what-should-restaurant-website-include.html /blog/restaurant-website-features-guide/ 301
+/blog/professional-website-for-restaurant.html    /blog/professional-restaurant-website-benefits/ 301
 
-# Map clean section URLs to subpage directories (200 Rewrite for seamless routing)
+# 2. Map clean canonical article URLs to physical blog HTML files (200 Rewrite for seamless clean URLs)
+/blog/why-every-cafe-needs-a-website/   /blog/why-cafe-needs-website.html  200
+/blog/restaurant-website-features/      /blog/7-things-restaurant-website-needs.html 200
+/blog/restaurant-website-vs-instagram/  /blog/restaurant-website-vs-instagram.html 200
+/blog/restaurant-website-cost/          /blog/restaurant-website-cost.html 200
+/blog/restaurant-online-menu/           /blog/how-to-create-online-menu.html 200
+/blog/restaurant-website-design-mistakes/ /blog/restaurant-website-mistakes.html 200
+/blog/how-to-get-more-cafe-customers/   /blog/get-more-customers-cafe.html 200
+/blog/restaurant-website-on-a-budget/   /blog/restaurant-website-on-budget.html 200
+/blog/restaurant-seo-guide/             /blog/restaurant-seo-guide.html 200
+/blog/restaurant-online-menu-benefits/  /blog/why-restaurants-need-online-menu.html 200
+/blog/restaurant-website-features-guide/ /blog/what-should-restaurant-website-include.html 200
+/blog/professional-restaurant-website-benefits/ /blog/professional-website-for-restaurant.html 200
+
+# 3. Map clean section URLs to subpage directories (200 Rewrite for seamless routing)
 /services/    /services/index.html   200
 /portfolio/   /portfolio/index.html  200
 /pricing/     /pricing/index.html    200
@@ -25,5 +39,5 @@
 /privacy-policy/ /privacy-policy/index.html 200
 /terms/       /terms/index.html      200
 
-# Custom 404 page routing for Netlify
+# 4. Custom 404 page routing for Netlify
 /*            /404.html              404

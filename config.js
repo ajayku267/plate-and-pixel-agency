@@ -9,7 +9,7 @@ const CONFIG = {
   email: "ajaykumar374011@gmail.com",
   instagramUrl: "https://www.instagram.com/foodbizweb/",
   instagramUsername: "@foodbizweb",
-  productionDomain: "https://plateandpixel.in",
+  productionDomain: "https://genuine-kleicha-966907.netlify.app",
   
   // Pre-filled WhatsApp messages
   messages: {
