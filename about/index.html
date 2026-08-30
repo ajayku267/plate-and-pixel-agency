@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | Plates & Pixels</title>
+  <meta name="description" content="Learn about Plates & Pixels — a specialized web design and digital marketing studio building professional websites for restaurants, cafes, bars, and bakeries.">
+  <link rel="canonical" href="https://plateandpixel.in/about/">
+  <link rel="stylesheet" href="/style.css">
+  <script src="/config.js" defer></script>
+</head>
+<body>
+<!-- FLOATING WHATSAPP -->
+<a href="#" class="wa-float" id="wa-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp" data-config-link="whatsapp" data-msg-type="general">
+  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+  <span class="wa-text">Chat on WhatsApp</span>
+</a>
+<div class="toast" id="toast" role="alert"></div>
+
+<!-- NAVIGATION -->
+<header>
+<nav class="nav" id="main-nav" role="navigation" aria-label="Main navigation">
+  <div class="nav__inner">
+    <a href="/index.html" class="nav__logo" aria-label="Plates and Pixels home">
+      <div class="nav__logo-icon" aria-hidden="true">&#127869;</div>
+      Plates &amp; Pixels
+    </a>
+    <ul class="nav__links" role="list">
+      <li><a href="/services/index.html">Services</a></li>
+      <li><a href="/portfolio/index.html">Portfolio</a></li>
+      <li><a href="/pricing/index.html">Pricing</a></li>
+      <li><a href="/blog/index.html">Blog</a></li>
+      <li><a href="/index.html" class="active">About</a></li>
+      <li><a href="/contact/index.html">Contact</a></li>
+    </ul>
+    <div class="nav__ctas">
+      <a href="#" class="btn btn-sm btn-whatsapp" target="_blank" rel="noopener" data-config-link="whatsapp" data-msg-type="general">
+        WhatsApp
+      </a>
+      <a href="/index.html#demo" class="btn btn-sm btn-primary">Get Free Demo</a>
+    </div>
+    <button class="nav__hamburger" id="hamburger" aria-label="Toggle mobile menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+<nav class="nav__mobile" id="mobile-menu" aria-label="Mobile navigation">
+  <a href="/services/index.html">Services</a>
+  <a href="/portfolio/index.html">Portfolio</a>
+  <a href="/pricing/index.html">Pricing</a>
+  <a href="/blog/index.html">Blog</a>
+  <a href="/index.html" class="active">About</a>
+  <a href="/contact/index.html">Contact</a>
+  <div class="nav__mobile-ctas">
+    <a href="#" class="btn btn-whatsapp" target="_blank" rel="noopener" data-config-link="whatsapp" data-msg-type="general">Chat on WhatsApp</a>
+    <a href="/index.html#demo" class="btn btn-primary">Get Free Demo</a>
+  </div>
+</nav>
+</header>
+
+<main id="main-content" style="padding-top:var(--nav-height);">
+  <section class="section" aria-labelledby="about-hero-title">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Our Story</span>
+        <h1 class="section-title" id="about-hero-title">We Help Food Businesses Look Professional Online.</h1>
+        <p class="section-subtitle">Plates &amp; Pixels specializes in websites and digital experiences for restaurants, cafés, bars, bakeries, and food businesses.</p>
+      </div>
+
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:3rem;align-items:center;margin-top:var(--space-2xl);">
+        <div>
+          <h2 style="font-family:var(--font-serif);font-size:1.8rem;color:var(--clr-white);margin-bottom:1rem;">Why a Food-Focused Agency?</h2>
+          <p style="color:var(--clr-muted);line-height:1.75;margin-bottom:1rem;">Most web design studios build websites for dentists one day, lawyers the next, and real estate agents the day after. Because they try to serve everyone, their designs remain generic, and they miss the specific details that make a restaurant website actually convert.</p>
+          <p style="color:var(--clr-muted);line-height:1.75;margin-bottom:1.5rem;">We only work with food and hospitality businesses. We know what café and restaurant customers look for when searching on their phones — your menu, your location, your opening hours, your ambiance, and your direct contact channels.</p>
+          <p style="color:var(--clr-muted);line-height:1.75;">By focusing exclusively on this niche, we build websites that represent your restaurant correctly, look incredibly premium, load instantly, and turn online browsers into real-life paying customers.</p>
+        </div>
+        <div style="background:var(--clr-bg-card);border:1px solid var(--clr-border-soft);padding:3rem;border-radius:var(--border-radius-lg);">
+          <h3 style="font-family:var(--font-serif);font-size:1.4rem;color:var(--clr-white);margin-bottom:1.5rem;text-align:center;">Our Design Principles</h3>
+          <div style="display:grid;gap:1.5rem;">
+            <div>
+              <strong style="color:var(--clr-gold);font-size:.9rem;display:block;margin-bottom:.25rem;">1. Mobile First, Always</strong>
+              <span style="font-size:.85rem;color:var(--clr-muted);line-height:1.6;">Over 80% of restaurant searches happen on mobile devices. Every site we design works flawlessly on mobile screens first.</span>
+            </div>
+            <div>
+              <strong style="color:var(--clr-gold);font-size:.9rem;display:block;margin-bottom:.25rem;">2. Instant Menu Access</strong>
+              <span style="font-size:.85rem;color:var(--clr-muted);line-height:1.6;">Menus should be clean HTML pages that load instantly and are indexable by search engines — not hidden behind blurry PDFs or app logins.</span>
+            </div>
+            <div>
+              <strong style="color:var(--clr-gold);font-size:.9rem;display:block;margin-bottom:.25rem;">3. Frictionless Conversion</strong>
+              <span style="font-size:.85rem;color:var(--clr-muted);line-height:1.6;">We place direct calls-to-action (WhatsApp, reservations, phone calls) exactly where customers expect them.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- FACTUAL VALUES BLOCK -->
+      <div style="margin-top:var(--space-2xl);display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1.5rem;text-align:center;">
+        <div style="background:var(--clr-bg-card);border:1px solid var(--clr-border-soft);padding:2rem;border-radius:var(--border-radius);">
+          <div style="font-size:2.5rem;font-weight:800;color:var(--clr-gold);margin-bottom:.5rem;">100%</div>
+          <div style="font-size:.85rem;color:var(--clr-white);font-weight:600;margin-bottom:.25rem;">Mobile Responsive</div>
+          <div style="font-size:.78rem;color:var(--clr-muted);">Every page is optimized for smartphones, tablets and desktops.</div>
+        </div>
+        <div style="background:var(--clr-bg-card);border:1px solid var(--clr-border-soft);padding:2rem;border-radius:var(--border-radius);">
+          <div style="font-size:2.5rem;font-weight:800;color:var(--clr-gold);margin-bottom:.5rem;">No Code</div>
+          <div style="font-size:.85rem;color:var(--clr-white);font-weight:600;margin-bottom:.25rem;">Zero Technical Stress</div>
+          <div style="font-size:.78rem;color:var(--clr-muted);">We handle the design, code, hosting, and deployment for you.</div>
+        </div>
+        <div style="background:var(--clr-bg-card);border:1px solid var(--clr-border-soft);padding:2rem;border-radius:var(--border-radius);">
+          <div style="font-size:2.5rem;font-weight:800;color:var(--clr-gold);margin-bottom:.5rem;">₹3,999</div>
+          <div style="font-size:.85rem;color:var(--clr-white);font-weight:600;margin-bottom:.25rem;">Starting Price</div>
+          <div style="font-size:.78rem;color:var(--clr-muted);">Transparent flat pricing, with zero hidden monthly service fees.</div>
+        </div>
+      </div>
+
+      <!-- END PAGE CTA -->
+      <div style="margin-top:var(--space-2xl);text-align:center;background:linear-gradient(135deg,rgba(200,150,62,0.08),rgba(200,150,62,0.02));border:1px solid var(--clr-border);padding:3rem;border-radius:var(--border-radius-lg);" class="fade-up">
+        <h2 style="font-family:var(--font-serif);font-size:2rem;color:var(--clr-white);margin-bottom:1rem;">Let's Build Your Restaurant's Online Presence</h2>
+        <p style="color:var(--clr-muted);max-width:600px;margin-inline:auto;margin-bottom:2rem;">Get a free, custom website mockup for your restaurant. See exactly what your website will look like before you pay anything.</p>
+        <div style="display:flex;justify-content:center;gap:1rem;flex-wrap:wrap;">
+          <a href="/index.html#demo" class="btn btn-primary btn-lg">&#9889; Get Your Free Demo</a>
+          <a href="#" class="btn btn-secondary btn-lg" data-config-link="whatsapp" data-msg-type="general">Chat on WhatsApp</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<!-- FOOTER -->
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer__top">
+      <div>
+        <a href="/index.html" class="footer__brand-logo">
+          <div class="nav__logo-icon" aria-hidden="true">&#127869;</div>
+          Plates &amp; Pixels
+        </a>
+        <p class="footer__brand-desc">We build modern, mobile-friendly websites for restaurants, cafes, bars, bakeries, and food businesses across India.</p>
+        <p style="font-size:.78rem;color:var(--clr-gold);letter-spacing:.06em;margin-bottom:1rem;">Restaurant Websites &#183; Digital Marketing &#183; SEO</p>
+        <div class="footer__social">
+          <a href="#" class="footer__social-link" target="_blank" rel="noopener" aria-label="Instagram" data-config-link="instagram">&#128247;</a>
+          <a href="#" class="footer__social-link" target="_blank" rel="noopener" aria-label="WhatsApp" data-config-link="whatsapp" data-msg-type="general">&#128177;</a>
+          <a href="#" class="footer__social-link" aria-label="Email" data-config-link="email">&#9993;</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer__nav-title">Navigation</div>
+        <nav class="footer__nav-links" aria-label="Footer navigation">
+          <a href="/index.html">Home</a>
+          <a href="/services/index.html">Services</a>
+          <a href="/portfolio/index.html">Portfolio</a>
+          <a href="/pricing/index.html">Pricing</a>
+          <a href="/blog/index.html">Blog</a>
+          <a href="/index.html" class="active">About</a>
+          <a href="/contact/index.html">Contact</a>
+        </nav>
+      </div>
+      <div>
+        <div class="footer__nav-title">Quick Links</div>
+        <nav class="footer__nav-links" aria-label="Quick links">
+          <a href="/index.html#demo">Get Free Demo</a>
+          <a href="#" target="_blank" rel="noopener" data-config-link="whatsapp" data-msg-type="general">Chat on WhatsApp</a>
+          <a href="/blog/index.html">All Blog Articles</a>
+          <a href="/sitemap.xml">Sitemap</a>
+          <a href="/privacy-policy/index.html">Privacy Policy</a>
+          <a href="/terms/index.html">Terms</a>
+        </nav>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="footer__copy">Copyright &copy; 2026 Plates &amp; Pixels. All rights reserved.</div>
+      <div class="footer__tagline">Restaurant Websites &bull; Digital Marketing &bull; SEO</div>
+    </div>
+  </div>
+</footer>
+
+<script src="/app.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+# ============================================================
+# PLATES & PIXELS — NETLIFY REDIRECTS CONFIGURATION
+# ============================================================
+
+# Redirect legacy/clean URLs to physical blog HTML files (301 Permanent Redirect)
+/blog/why-every-cafe-needs-a-website/   /blog/why-cafe-needs-website.html  301
+/blog/restaurant-website-features/      /blog/7-things-restaurant-website-needs.html 301
+/blog/restaurant-website-vs-instagram/  /blog/restaurant-website-vs-instagram.html 301
+/blog/restaurant-website-cost/          /blog/restaurant-website-cost.html 301
+/blog/restaurant-online-menu/           /blog/how-to-create-online-menu.html 301
+/blog/restaurant-website-design-mistakes/ /blog/restaurant-website-mistakes.html 301
+/blog/how-to-get-more-cafe-customers/   /blog/get-more-customers-cafe.html 301
+/blog/restaurant-website-on-a-budget/   /blog/restaurant-website-on-budget.html 301
+/blog/restaurant-seo-guide/             /blog/restaurant-seo-guide.html 301
+/blog/restaurant-online-menu-benefits/  /blog/why-restaurants-need-online-menu.html 301
+/blog/restaurant-website-features-guide/ /blog/what-should-restaurant-website-include.html 301
+/blog/professional-restaurant-website-benefits/ /blog/professional-website-for-restaurant.html 301
+
+# Map clean section URLs to subpage directories (200 Rewrite for seamless routing)
+/services/    /services/index.html   200
+/portfolio/   /portfolio/index.html  200
+/pricing/     /pricing/index.html    200
+/about/       /about/index.html      200
+/contact/     /contact/index.html    200
+/privacy-policy/ /privacy-policy/index.html 200
+/terms/       /terms/index.html      200
+
+# Custom 404 page routing for Netlify
+/*            /404.html              404

@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant Website Design Agency | Websites for Cafes, Bars & Food Businesses</title>
+  <meta name="description" content="We build modern, mobile-friendly websites for restaurants, cafes, bars, bakeries and food businesses in India. Starting from Rs 3,999. Get a free demo today.">
+  <meta name="keywords" content="restaurant website design, cafe website design, restaurant website developer, restaurant website India, cafe website India, website for restaurant, website for cafe, restaurant digital marketing, restaurant SEO">
+  <link rel="canonical" href="https://plateandpixel.in/">
+  <meta property="og:title" content="Restaurant Website Design | Plates & Pixels Agency">
+  <meta property="og:description" content="Modern, mobile-friendly websites for restaurants, cafes, bars and food businesses. Starting from Rs 3,999.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://plateandpixel.in/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Restaurant Website Design Agency">
+  <meta name="twitter:description" content="Websites for restaurants, cafes, bars and bakeries. Starting from Rs 3,999.">
+  <link rel="stylesheet" href="/style.css">
+  <script src="/config.js" defer></script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"LocalBusiness","name":"Plates & Pixels","description":"Web design agency specialising in websites for restaurants, cafes, bars and food businesses.","url":"https://plateandpixel.in","priceRange":"Rs 3999 - Rs 9999+","areaServed":"India","serviceType":["Restaurant Website Design","Cafe Website Design","Digital Marketing","SEO"]}
+  </script>
+</head>
+<body>
+<!-- FLOATING WHATSAPP -->
+<a href="#" class="wa-float" id="wa-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp" data-config-link="whatsapp" data-msg-type="general">
+  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+  <span class="wa-text">Chat on WhatsApp</span>
+</a>
+<div class="toast" id="toast" role="alert"></div>
+
+<!-- NAVIGATION -->
+<header>
+<nav class="nav" id="main-nav" role="navigation" aria-label="Main navigation">
+  <div class="nav__inner">
+    <a href="/index.html" class="nav__logo" aria-label="Plates and Pixels home">
+      <div class="nav__logo-icon" aria-hidden="true">&#127869;</div>
+      Plates &amp; Pixels
+    </a>
+    <ul class="nav__links" role="list">
+      <li><a href="/services/index.html">Services</a></li>
+      <li><a href="/portfolio/index.html">Portfolio</a></li>
+      <li><a href="/pricing/index.html">Pricing</a></li>
+      <li><a href="/blog/index.html">Blog</a></li>
+      <li><a href="/about/index.html">About</a></li>
+      <li><a href="/contact/index.html">Contact</a></li>
+    </ul>
+    <div class="nav__ctas">
+      <a href="#" class="btn btn-sm btn-whatsapp" target="_blank" rel="noopener" id="nav-wa-btn" data-config-link="whatsapp" data-msg-type="general">
+        WhatsApp
+      </a>
+      <a href="#demo" class="btn btn-sm btn-primary" id="nav-demo-btn">Get Free Demo</a>
+    </div>
+    <button class="nav__hamburger" id="hamburger" aria-label="Toggle mobile menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+<nav class="nav__mobile" id="mobile-menu" aria-label="Mobile navigation">
+  <a href="/services/index.html">Services</a>
+  <a href="/portfolio/index.html">Portfolio</a>
+  <a href="/pricing/index.html">Pricing</a>
+  <a href="/blog/index.html">Blog</a>
+  <a href="/about/index.html">About</a>
+  <a href="/contact/index.html">Contact</a>
+  <div class="nav__mobile-ctas">
+    <a href="#" class="btn btn-whatsapp" target="_blank" rel="noopener" data-config-link="whatsapp" data-msg-type="general">&#128177; Chat on WhatsApp</a>
+    <a href="#demo" class="btn btn-primary">Get Free Demo</a>
+  </div>
+</nav>
+</header>
+<!-- HERO -->
+<main>
+<section class="hero" id="home" aria-labelledby="hero-headline">
+  <div class="hero__bg" aria-hidden="true"></div>
+  <div class="hero__grid-overlay" aria-hidden="true"></div>
+  <div class="hero__deco hero__deco-ring" aria-hidden="true"></div>
+  <div class="hero__deco hero__deco-ring-2" aria-hidden="true"></div>
+  <div class="container">
+    <div class="hero__inner">
+      <div class="hero__content fade-up">
+        <div class="hero__eyebrow">&#127869; Restaurant Web Design Agency</div>
+        <h1 class="hero__headline" id="hero-headline">
+          We Build Websites That Make Restaurants Look <em>Better Online.</em>
+        </h1>
+        <p class="hero__subheadline">
+          Modern, mobile-friendly websites designed for cafes, restaurants, bars, bakeries, and food businesses.
+        </p>
+        <div class="hero__ctas">
+          <a href="#demo" class="btn btn-primary btn-lg" id="hero-demo-btn">&#9889; Get My Free Demo</a>
+          <a href="#portfolio" class="btn btn-secondary btn-lg" id="hero-portfolio-btn">View Our Work</a>
+        </div>
+        <div class="hero__trust">
+          <span class="hero__trust-item"><span class="hero__trust-dot"></span>Fast</span>
+          <span class="hero__trust-item"><span class="hero__trust-dot"></span>Mobile-Friendly</span>
+          <span class="hero__trust-item"><span class="hero__trust-dot"></span>SEO-Ready</span>
+          <span class="hero__trust-item"><span class="hero__trust-dot"></span>WhatsApp Integrated</span>
+        </div>
+      </div>
+      <!-- CSS MOCKUP -->
+      <div class="hero__visual fade-in stagger-3" aria-hidden="true">
+        <div class="mockup-frame">
+          <div class="mockup-laptop">
+            <div class="mockup-laptop__camera"></div>
+            <div class="mockup-laptop__screen">
+              <div class="mockup-website">
+                <div class="mockup-nav-bar">
+                  <span class="mockup-nav-logo">Radiant Cafe</span>
+                  <div class="mockup-nav-links-row">
+                    <div class="mockup-nav-link-bar"></div>
+                    <div class="mockup-nav-link-bar"></div>
+                    <div class="mockup-nav-link-bar"></div>
+                  </div>
+                  <div class="mockup-nav-cta-btn"></div>
+                </div>
+                <div class="mockup-hero-area">
+                  <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80&auto=format" alt="Restaurant ambiance" loading="lazy" class="mockup-hero-img" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;opacity:0.45;">
+                  <div class="mockup-hero-overlay-content">
+                    <div class="mockup-hero-tag-line"></div>
+                    <div class="mockup-hero-h1-text">Radiant Cafe &amp; Wine Bar</div>
+                    <div class="mockup-hero-sub-line"></div>
+                    <div class="mockup-hero-btns-row">
+                      <div class="mockup-btn-gold-pill"></div>
+                      <div class="mockup-btn-ghost-pill"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mockup-base-bar"></div>
+          <div class="mockup-phone-wrap">
+            <div class="mockup-phone-screen">
+              <div class="mockup-phone-content">
+                <div class="mockup-phone-logo-bar"></div>
+                <div class="mockup-phone-img-block">&#127869;</div>
+                <div class="mockup-phone-text-line"></div>
+                <div class="mockup-phone-wa-btn"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- SERVICES -->
+<section class="services" id="services" aria-labelledby="services-title">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label fade-up">What We Do</span>
+      <h2 class="section-title fade-up stagger-1" id="services-title">Everything Your Restaurant Needs Online</h2>
+      <p class="section-subtitle fade-up stagger-2">From a single page site to a full multi-section website — we build it around your restaurant's brand, menu, and customers.</p>
+    </div>
+    <div class="services__grid">
+      <article class="service-card fade-up stagger-1">
+        <div class="service-card__icon" aria-hidden="true">&#127965;</div>
+        <h3 class="service-card__title">Restaurant Website Design</h3>
+        <p class="service-card__desc">Modern websites customised around your brand, menu, location, and customers. Every site is built to reflect your restaurant's identity.</p>
+      </article>
+      <article class="service-card fade-up stagger-2">
+        <div class="service-card__icon" aria-hidden="true">&#128241;</div>
+        <h3 class="service-card__title">Mobile-First Design</h3>
+        <p class="service-card__desc">Websites that look excellent on smartphones, tablets, and desktops. Most of your customers search on mobile — we make sure they like what they see.</p>
+      </article>
+      <article class="service-card fade-up stagger-3">
+        <div class="service-card__icon" aria-hidden="true">&#128214;</div>
+        <h3 class="service-card__title">Online Menu</h3>
+        <p class="service-card__desc">Beautiful digital menus that customers can access instantly. No more PDFs or Instagram scrolling — your menu is always up to date.</p>
+      </article>
+      <article class="service-card fade-up stagger-4">
+        <div class="service-card__icon" aria-hidden="true">&#128172;</div>
+        <h3 class="service-card__title">WhatsApp Integration</h3>
+        <p class="service-card__desc">Let customers contact or order from you directly through WhatsApp. One tap on your website opens a conversation with your team.</p>
+      </article>
+      <article class="service-card fade-up stagger-5">
+        <div class="service-card__icon" aria-hidden="true">&#128205;</div>
+        <h3 class="service-card__title">Google Maps Integration</h3>
+        <p class="service-card__desc">Make it easy for customers to find your restaurant. Embedded maps mean no more confusion about directions or location.</p>
+      </article>
+      <article class="service-card fade-up stagger-6">
+        <div class="service-card__icon" aria-hidden="true">&#128269;</div>
+        <h3 class="service-card__title">SEO Setup</h3>
+        <p class="service-card__desc">We structure your website so search engines understand what your business is. When people search for restaurants in your area, they find you.</p>
+      </article>
+      <article class="service-card fade-up stagger-7">
+        <div class="service-card__icon" aria-hidden="true">&#128296;</div>
+        <h3 class="service-card__title">Website Maintenance</h3>
+        <p class="service-card__desc">Optional ongoing support for menu updates, new photos, seasonal offers, and keeping your business information current.</p>
+      </article>
+    </div>
+  </div>
+</section>
+<!-- PROBLEM SECTION -->
+<section class="problem" id="problem" aria-labelledby="problem-title">
+  <div class="container">
+    <div class="problem__inner">
+      <div>
+        <span class="section-label fade-up">The Problem</span>
+        <h2 class="section-title fade-up stagger-1" id="problem-title">Is Your Restaurant Losing Customers Online?</h2>
+        <p class="section-subtitle fade-up stagger-2">Most restaurant owners know they need a website. But many are still relying on Instagram alone — and losing customers every day because of it.</p>
+        <ul class="problem__list" role="list">
+          <li class="problem__item fade-up stagger-1">
+            <span class="problem__item-icon" aria-hidden="true">&#10060;</span>
+            <span class="problem__item-text">No professional website representing your restaurant</span>
+          </li>
+          <li class="problem__item fade-up stagger-2">
+            <span class="problem__item-icon" aria-hidden="true">&#10060;</span>
+            <span class="problem__item-text">Customers cannot find your menu without scrolling Instagram</span>
+          </li>
+          <li class="problem__item fade-up stagger-3">
+            <span class="problem__item-icon" aria-hidden="true">&#10060;</span>
+            <span class="problem__item-text">Website does not work properly on mobile devices</span>
+          </li>
+          <li class="problem__item fade-up stagger-4">
+            <span class="problem__item-icon" aria-hidden="true">&#10060;</span>
+            <span class="problem__item-text">Location, hours, and contact info are hard to find</span>
+          </li>
+          <li class="problem__item fade-up stagger-5">
+            <span class="problem__item-icon" aria-hidden="true">&#10060;</span>
+            <span class="problem__item-text">No clear way for customers to contact or book a table</span>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <span class="section-label fade-up">The Solution</span>
+        <h2 class="section-title fade-up stagger-1">We Turn These Problems Into a Professional Online Experience.</h2>
+        <ul class="solution__list" role="list">
+          <li class="solution__item fade-up stagger-1">
+            <span class="solution__item-icon" aria-hidden="true">&#9989;</span>
+            <span class="solution__item-text">A professional website that represents your restaurant well</span>
+          </li>
+          <li class="solution__item fade-up stagger-2">
+            <span class="solution__item-icon" aria-hidden="true">&#9989;</span>
+            <span class="solution__item-text">A clean online menu customers can view in seconds</span>
+          </li>
+          <li class="solution__item fade-up stagger-3">
+            <span class="solution__item-icon" aria-hidden="true">&#9989;</span>
+            <span class="solution__item-text">Fully optimised for mobile, tablet, and desktop</span>
+          </li>
+          <li class="solution__item fade-up stagger-4">
+            <span class="solution__item-icon" aria-hidden="true">&#9989;</span>
+            <span class="solution__item-text">Hours, location, map, and contact all in one place</span>
+          </li>
+          <li class="solution__item fade-up stagger-5">
+            <span class="solution__item-icon" aria-hidden="true">&#9989;</span>
+            <span class="solution__item-text">One-tap WhatsApp and booking CTA for instant inquiries</span>
+          </li>
+        </ul>
+        <a href="#demo" class="btn btn-primary fade-up stagger-6" id="problem-cta-btn">Get My Free Demo &#8594;</a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- PORTFOLIO -->
+<section class="portfolio" id="portfolio" aria-labelledby="portfolio-title">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label fade-up">Our Work</span>
+      <h2 class="section-title fade-up stagger-1" id="portfolio-title">Websites We Have Built</h2>
+      <p class="section-subtitle fade-up stagger-2">Each site is designed around the specific restaurant — its brand, cuisine, and customers.</p>
+    </div>
+    <!-- LIVE DEMO STRIP -->
+    <div class="demo-strip fade-up stagger-2" style="display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:1rem;margin-bottom:3rem;padding:1.25rem 1.75rem;background:rgba(200,150,62,0.06);border:1px solid rgba(200,150,62,0.18);border-radius:50px;">
+      <span style="font-size:.8rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--clr-gold);">&#9889; Live Demos:</span>
+      <a href="https://radiantcafe.netlify.app/" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:.4rem;font-size:.85rem;font-weight:600;color:var(--clr-off-white);padding:.4rem .9rem;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:50px;transition:all .2s ease;" id="strip-radiant-link" onmouseover="this.style.borderColor='rgba(200,150,62,.4)'" onmouseout="this.style.borderColor='rgba(255,255,255,.1)'">&#127775; Radiant Cafe &amp; Wine Bar &#8599;</a>
+      <a href="https://onlybarrestro.netlify.app/" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:.4rem;font-size:.85rem;font-weight:600;color:var(--clr-off-white);padding:.4rem .9rem;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:50px;transition:all .2s ease;" id="strip-onlybar-link" onmouseover="this.style.borderColor='rgba(200,150,62,.4)'" onmouseout="this.style.borderColor='rgba(255,255,255,.1)'">&#127867; Only Bar Restaurant &#8599;</a>
+      <a href="#demo" style="display:inline-flex;align-items:center;gap:.4rem;font-size:.85rem;font-weight:600;color:var(--clr-gold);padding:.4rem .9rem;background:rgba(200,150,62,.1);border:1px solid rgba(200,150,62,.25);border-radius:50px;">&#43; Request Your Demo</a>
+    </div>
+    <div class="portfolio__grid">
+      <!-- REAL PROJECT 1 -->
+      <article class="portfolio-card fade-up stagger-1">
+        <div class="portfolio-card__preview">
+          <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=800&q=80&auto=format" alt="Radiant Cafe website preview" loading="lazy" class="portfolio-card__img">
+          <div class="portfolio-card__overlay">
+            <a href="https://radiantcafe.netlify.app/" class="btn btn-primary btn-sm" target="_blank" rel="noopener" id="portfolio-radiant-demo-btn">View Live Site</a>
+          </div>
+        </div>
+        <div class="portfolio-card__body">
+          <div class="portfolio-card__type">Cafe &amp; Wine Bar</div>
+          <h3 class="portfolio-card__name">Radiant Cafe &amp; Wine Bar</h3>
+          <p class="portfolio-card__desc">A premium dark-themed website with an online menu, WhatsApp CTA, gallery section, and smooth animations. Designed to match the cafe's upscale ambiance.</p>
+          <div class="portfolio-card__footer">
+            <div class="portfolio-card__tags">
+              <span class="portfolio-tag">Online Menu</span>
+              <span class="portfolio-tag">WhatsApp</span>
+              <span class="portfolio-tag">SEO</span>
+            </div>
+            <a href="https://radiantcafe.netlify.app/" class="btn btn-outline-gold btn-sm" target="_blank" rel="noopener" id="portfolio-radiant-btn">View Demo</a>
+          </div>
+        </div>
+      </article>
+      <!-- REAL PROJECT 2 -->
+      <article class="portfolio-card fade-up stagger-2">
+        <div class="portfolio-card__preview">
+          <img src="https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?w=800&q=80&auto=format" alt="Only Bar Restaurant website preview" loading="lazy" class="portfolio-card__img">
+          <div class="portfolio-card__overlay">
+            <a href="https://onlybarrestro.netlify.app/" class="btn btn-primary btn-sm" target="_blank" rel="noopener" id="portfolio-onlybar-demo-btn">View Live Site</a>
+          </div>
+        </div>
+        <div class="portfolio-card__body">
+          <div class="portfolio-card__type">Bar &amp; Restaurant</div>
+          <h3 class="portfolio-card__name">Only Bar Restaurant</h3>
+          <p class="portfolio-card__desc">A bold, high-energy website for a bar and restaurant. Features the drinks menu, event highlights, Google Maps, and a clear WhatsApp contact flow.</p>
+          <div class="portfolio-card__footer">
+            <div class="portfolio-card__tags">
+              <span class="portfolio-tag">Bar Menu</span>
+              <span class="portfolio-tag">Maps</span>
+              <span class="portfolio-tag">Animations</span>
+            </div>
+            <a href="https://onlybarrestro.netlify.app/" class="btn btn-outline-gold btn-sm" target="_blank" rel="noopener" id="portfolio-onlybar-btn">View Demo</a>
+          </div>
+        </div>
+      </article>
+      <!-- DEMO PROJECT 3 -->
+      <article class="portfolio-card fade-up stagger-3">
+        <div class="portfolio-card__preview">
+          <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=800&q=80&auto=format" alt="Spice Garden Cloud Kitchen website preview" loading="lazy" class="portfolio-card__img">
+          <div class="portfolio-card__overlay">
+            <a href="#demo" class="btn btn-primary btn-sm" id="portfolio-spice-demo-btn">Request Similar Demo</a>
+          </div>
+        </div>
+        <div class="portfolio-card__body">
+          <div class="portfolio-card__type">Cloud Kitchen</div>
+          <h3 class="portfolio-card__name">Spice Garden Kitchen</h3>
+          <p class="portfolio-card__desc">A vibrant, conversion-focused website for a cloud kitchen — online menu with categories, WhatsApp ordering, Zomato/Swiggy links, and Google Maps embed.</p>
+          <div class="portfolio-card__footer">
+            <div class="portfolio-card__tags">
+              <span class="portfolio-tag">Order via WA</span>
+              <span class="portfolio-tag">Online Menu</span>
+              <span class="portfolio-tag">Delivery Links</span>
+            </div>
+            <a href="#demo" class="btn btn-outline-gold btn-sm" id="portfolio-spice-btn">Get Similar</a>
+          </div>
+        </div>
+      </article>
+      <!-- CTA CARD -->
+      <article class="portfolio-card fade-up stagger-4" style="background:linear-gradient(135deg,rgba(200,150,62,0.08),rgba(200,150,62,0.03));border:1.5px dashed rgba(200,150,62,0.3);display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:2.5rem 2rem;">
+        <div style="font-size:2.5rem;margin-bottom:1rem;">&#127869;</div>
+        <div class="portfolio-card__type" style="margin-bottom:.5rem;">Your Restaurant</div>
+        <h3 class="portfolio-card__name" style="margin-bottom:.75rem;">Could Be Next</h3>
+        <p class="portfolio-card__desc" style="margin-bottom:1.5rem;">We build a free custom demo for your restaurant — so you can see exactly what your site will look like before paying anything.</p>
+        <a href="#demo" class="btn btn-primary" id="portfolio-cta-card-btn">&#9889; Get My Free Demo</a>
+        <p style="font-size:.75rem;color:var(--clr-muted);margin-top:.75rem;">Free. No commitment.</p>
+      </article>
+    </div>
+  </div>
+</section>
+<!-- BEFORE / AFTER -->
+<section class="before-after" id="before-after" aria-labelledby="ba-title">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label fade-up">The Difference</span>
+      <h2 class="section-title fade-up stagger-1" id="ba-title">Before and After Getting a Website</h2>
+    </div>
+    <div class="before-after__inner">
+      <div class="ba-card ba-card--before fade-up stagger-1">
+        <div class="ba-card__label">&#128308; Before</div>
+        <h3 class="ba-card__title">Instagram-Only Presence</h3>
+        <ul class="ba-list" role="list">
+          <li class="ba-list__item"><span aria-hidden="true">&#10060;</span> No dedicated website</li>
+          <li class="ba-list__item"><span aria-hidden="true">&#10060;</span> Customers scroll through posts to find the menu</li>
+          <li class="ba-list__item"><span aria-hidden="true">&#10060;</span> No clear contact or booking option</li>
+          <li class="ba-list__item"><span aria-hidden="true">&#10060;</span> Hard to find on Google search</li>
+          <li class="ba-list__item"><span aria-hidden="true">&#10060;</span> Looks less professional than competitors</li>
+          <li class="ba-list__item"><span aria-hidden="true">&#10060;</span> No way to show your full brand story</li>
+        </ul>
+      </div>
+      <div class="ba-card ba-card--after fade-up stagger-2">
+        <div class="ba-card__label">&#128994; After</div>
+        <h3 class="ba-card__title">Professional Website</h3>
+        <ul class="ba-list" role="list">
+          <li class="ba-list__item"><span aria-hidden="true">&#9989;</span> A clean, professional website that represents your brand</li>
+          <li class="ba-list__item"><span aria-hidden="true">&#9989;</span> Online menu customers can view instantly</li>
+          <li class="ba-list__item"><span aria-hidden="true">&#9989;</span> One-tap WhatsApp contact button</li>
+          <li class="ba-list__item"><span aria-hidden="true">&#9989;</span> Google Maps integration so customers find you easily</li>
+          <li class="ba-list__item"><span aria-hidden="true">&#9989;</span> Better visibility in local search results</li>
+          <li class="ba-list__item"><span aria-hidden="true">&#9989;</span> A strong, trustworthy online presence</li>
+        </ul>
+      </div>
+    </div>
+    <div class="ba-cta fade-up">
+      <p class="section-subtitle" style="margin-inline:auto;margin-bottom:1.5rem;text-align:center;">Want your restaurant to look like this?</p>
+      <a href="#demo" class="btn btn-primary btn-lg" id="ba-cta-btn">&#9889; Request Your Free Demo</a>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="process" id="process" aria-labelledby="process-title">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label fade-up">How It Works</span>
+      <h2 class="section-title fade-up stagger-1" id="process-title">From Idea to Website in 4 Simple Steps</h2>
+      <p class="section-subtitle fade-up stagger-2">We keep the process simple so you can focus on running your restaurant while we build your website.</p>
+    </div>
+    <div class="process__steps">
+      <div class="process-step fade-up stagger-1">
+        <div class="process-step__num" aria-label="Step 1">1</div>
+        <h3 class="process-step__title">Tell Us About Your Business</h3>
+        <p class="process-step__desc">Share your restaurant name, menu, photos, location, and branding. We will take it from there.</p>
+      </div>
+      <div class="process-step fade-up stagger-2">
+        <div class="process-step__num" aria-label="Step 2">2</div>
+        <h3 class="process-step__title">We Design Your Website</h3>
+        <p class="process-step__desc">We create a custom design based on your business. You will get a preview before anything goes live.</p>
+      </div>
+      <div class="process-step fade-up stagger-3">
+        <div class="process-step__num" aria-label="Step 3">3</div>
+        <h3 class="process-step__title">You Review It</h3>
+        <p class="process-step__desc">Request changes and we will refine the design until you are completely happy with it.</p>
+      </div>
+      <div class="process-step fade-up stagger-4">
+        <div class="process-step__num" aria-label="Step 4">4</div>
+        <h3 class="process-step__title">We Launch It</h3>
+        <p class="process-step__desc">Your website goes live and is available to your customers. We handle the deployment for you.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- PRICING -->
+<section class="pricing" id="pricing" aria-labelledby="pricing-title">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label fade-up">Transparent Pricing</span>
+      <h2 class="section-title fade-up stagger-1" id="pricing-title">Simple, Honest Pricing</h2>
+      <p class="section-subtitle fade-up stagger-2">No hidden fees. No surprises. Pricing can be customised depending on your specific requirements.</p>
+    </div>
+    <div class="pricing__grid">
+      <!-- STARTER -->
+      <div class="pricing-card fade-up stagger-1">
+        <div class="pricing-card__tier">Starter</div>
+        <div class="pricing-card__name">Starter</div>
+        <div class="pricing-card__price">&#8377;3,999</div>
+        <div class="pricing-card__note">One-time payment &bull; Perfect for getting started</div>
+        <div class="pricing-divider"></div>
+        <ul class="pricing-features" role="list">
+          <li class="pricing-feature"><span class="pricing-feature__icon" aria-hidden="true">&#10003;</span>Single-page website</li>
+          <li class="pricing-feature"><span class="pricing-feature__icon" aria-hidden="true">&#10003;</span>Mobile responsive design</li>
+          <li class="pricing-feature"><span class="pricing-feature__icon" aria-hidden="true">&#10003;</span>Menu section</li>
+          <li class="pricing-feature"><span class="pricing-feature__icon" aria-hidden="true">&#10003;</span>Photo gallery</li>
+          <li class="pricing-feature"><span class="pricing-feature__icon" aria-hidden="true">&#10003;</span>Google Maps integration</li>
+          <li class="pricing-feature"><span class="pricing-feature__icon" aria-hidden="true">&#10003;</span>WhatsApp button</li>
+          <li class="pricing-feature"><span class="pricing-feature__icon" aria-hidden="true">&#10003;</span>Contact section</li>
+        </ul>
+        <a href="#demo" class="btn btn-secondary" id="pricing-starter-btn">Get Started &rarr;</a>
+      </div>
+      <!-- PROFESSIONAL -->
+      <div class="pricing-card pricing-card--popular fade-up stagger-2">
+        <div class="pricing-card__badge"><span class="badge badge-gold">&#11088; Most Popular</span></div>
+        <div class="pricing-card__tier">Professional</div>
+        <div class="pricing-card__name">Professional</div>
+        <div class="pricing-card__price">&#8377;6,999</div>
+        <div class="pricing-card__note" style="display:flex;align-items:center;gap:.5rem;flex-wrap:wrap;">One-time payment <span style="background:rgba(37,211,102,.12);color:#25D366;border:1px solid rgba(37,211,102,.25);font-size:.65rem;font-weight:700;padding:.2rem .5rem;border-radius:50px;">Best Value</span></div>
+        <div class="pricing-divider"></div>
+        <ul class="pricing-features" role="list">
+          <li class="pricing-feature"><span class="pricing-feature__icon" aria-hidden="true">&#10003;</span>Multi-section website</li>
+          <li class="pricing-feature"><span class="pricing-feature__icon" aria-hidden="true">&#10003;</span>Online menu</li>
+          <li class="pricing-feature"><span class="pricing-feature__icon" aria-hidden="true">&#10003;</span>Photo gallery</li>
+          <li class="pricing-feature"><span class="pricing-feature__icon" aria-hidden="true">&#10003;</span>Google Maps integration</li>
+          <li class="pricing-feature"><span class="pricing-feature__icon" aria-hidden="true">&#10003;</span>WhatsApp integration</li>
+          <li class="pricing-feature"><span class="pricing-feature__icon" aria-hidden="true">&#10003;</span>Reservation / contact CTA</li>
+          <li class="pricing-feature"><span class="pricing-feature__icon" aria-hidden="true">&#10003;</span>Basic SEO setup</li>
+          <li class="pricing-feature"><span class="pricing-feature__icon" aria-hidden="true">&#10003;</span>Premium animations</li>
+          <li class="pricing-feature"><span class="pricing-feature__icon" aria-hidden="true">&#10003;</span>Deployment included</li>
+        </ul>
+        <a href="#demo" class="btn btn-primary" id="pricing-pro-btn">&#9889; Choose Professional</a>
+      </div>
+      <!-- PREMIUM -->
+      <div class="pricing-card fade-up stagger-3">
+        <div class="pricing-card__tier">Premium</div>
+        <div class="pricing-card__name">Premium</div>
+        <div class="pricing-card__price">&#8377;9,999<span>+</span></div>
+        <div class="pricing-card__note">Custom quote based on requirements</div>
+        <div class="pricing-divider"></div>
+        <ul class="pricing-features" role="list">
+          <li class="pricing-feature"><span class="pricing-feature__icon" aria-hidden="true">&#10003;</span>Custom multi-page website</li>
+          <li class="pricing-feature"><span class="pricing-feature__icon" aria-hidden="true">&#10003;</span>Advanced menu layout</li>
+          <li class="pricing-feature"><span class="pricing-feature__icon" aria-hidden="true">&#10003;</span>Booking or order integration</li>
+          <li class="pricing-feature"><span class="pricing-feature__icon" aria-hidden="true">&#10003;</span>Advanced SEO</li>
+          <li class="pricing-feature"><span class="pricing-feature__icon" aria-hidden="true">&#10003;</span>Custom animations</li>
+          <li class="pricing-feature"><span class="pricing-feature__icon" aria-hidden="true">&#10003;</span>Premium design</li>
+          <li class="pricing-feature"><span class="pricing-feature__icon" aria-hidden="true">&#10003;</span>Ongoing support available</li>
+        </ul>
+        <a href="#" class="btn btn-outline-gold" target="_blank" rel="noopener" id="pricing-premium-btn" data-config-link="whatsapp" data-msg-type="pricing">Talk to Us</a>
+      </div>
+    </div>
+    <p class="pricing__note fade-up">Pricing is flexible. <a href="#contact">Contact us</a> to discuss what fits your budget and requirements.</p>
+  </div>
+</section>
+<!-- FREE DEMO CTA -->
+<section class="demo-cta" id="demo" aria-labelledby="demo-title">
+  <div class="demo-cta__bg" aria-hidden="true"></div>
+  <div class="container">
+    <div class="demo-cta__inner">
+      <div class="fade-up">
+        <span class="section-label">Free. No Commitment. No Catch.</span>
+        <h2 class="section-title" id="demo-title">Let Us Build Your Restaurant a Free Demo Website</h2>
+        <p class="section-subtitle" style="margin-bottom:1.5rem;">Send us your restaurant name and we will design a real demo based on your brand, menu, and style — at zero cost. You only pay if you want to proceed.</p>
+        <!-- MINI STEPS -->
+        <div style="display:flex;flex-direction:column;gap:.875rem;margin-bottom:1.75rem;">
+          <div style="display:flex;align-items:flex-start;gap:1rem;">
+            <div style="width:32px;height:32px;background:linear-gradient(135deg,var(--clr-gold),var(--clr-gold-dark));border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.8rem;font-weight:700;color:#0a0a0a;flex-shrink:0;">1</div>
+            <div><strong style="color:var(--clr-white);font-size:.9rem;">Fill in the form</strong><p style="font-size:.82rem;color:var(--clr-muted);margin-top:.2rem;">Name, restaurant name, WhatsApp number. Takes 60 seconds.</p></div>
+          </div>
+          <div style="display:flex;align-items:flex-start;gap:1rem;">
+            <div style="width:32px;height:32px;background:linear-gradient(135deg,var(--clr-gold),var(--clr-gold-dark));border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.8rem;font-weight:700;color:#0a0a0a;flex-shrink:0;">2</div>
+            <div><strong style="color:var(--clr-white);font-size:.9rem;">We design your demo</strong><p style="font-size:.82rem;color:var(--clr-muted);margin-top:.2rem;">A real custom design built around your restaurant — free of charge.</p></div>
+          </div>
+          <div style="display:flex;align-items:flex-start;gap:1rem;">
+            <div style="width:32px;height:32px;background:linear-gradient(135deg,var(--clr-gold),var(--clr-gold-dark));border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.8rem;font-weight:700;color:#0a0a0a;flex-shrink:0;">3</div>
+            <div><strong style="color:var(--clr-white);font-size:.9rem;">You decide</strong><p style="font-size:.82rem;color:var(--clr-muted);margin-top:.2rem;">Love it? We launch it. Not happy? No problem, no payment, no obligation.</p></div>
+          </div>
+        </div>
+        <!-- SOCIAL PROOF -->
+        <div style="background:rgba(200,150,62,0.06);border:1px solid rgba(200,150,62,0.15);border-radius:var(--border-radius-sm);padding:1rem 1.25rem;margin-bottom:1.5rem;">
+          <p style="font-size:.82rem;color:var(--clr-muted);line-height:1.6;">&#9889; <strong style="color:var(--clr-white);">Currently open for new clients.</strong> We work with restaurants, cafes, bars, bakeries and cloud kitchens. Demos are sent within 2–3 business days.</p>
+        </div>
+        <a href="#" class="btn btn-whatsapp btn-lg" target="_blank" rel="noopener" id="demo-wa-btn" style="width:100%;justify-content:center;" data-config-link="whatsapp" data-msg-type="demo">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+          Skip the form — WhatsApp Us Directly
+        </a>
+      </div>
+      <div class="demo-cta__form-wrap fade-up stagger-2">
+        <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.75rem;margin-bottom:1.5rem;">
+          <h3 style="font-family:var(--font-serif);font-size:1.35rem;color:var(--clr-white);">Request Your Free Demo</h3>
+          <span class="badge badge-gold" style="font-size:.65rem;">&#10003; 100% Free</span>
+        </div>
+        <form id="demo-form" novalidate aria-label="Free demo request form">
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="demo-name">Your Name *</label>
+              <input class="form-input" type="text" id="demo-name" name="name" placeholder="Ravi Kumar" required autocomplete="name">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="demo-restaurant">Restaurant Name *</label>
+              <input class="form-input" type="text" id="demo-restaurant" name="restaurant" placeholder="Spice Garden" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group" style="flex: 2;">
+              <label class="form-label" for="demo-phone">Phone / WhatsApp *</label>
+              <input class="form-input" type="tel" id="demo-phone" name="phone" placeholder="+91 98765 43210" required autocomplete="tel">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="demo-instagram">Instagram URL</label>
+              <input class="form-input" type="url" id="demo-instagram" name="instagram" placeholder="instagram.com/yourrestaurant">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="demo-website">Current Website</label>
+              <input class="form-input" type="url" id="demo-website" name="website" placeholder="yoursite.com (if any)">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="demo-message">Tell us about your restaurant</label>
+            <textarea class="form-textarea" id="demo-message" name="message" placeholder="Cuisine type, location, what you are looking for..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-lg" style="width:100%;justify-content:center;" id="demo-submit-btn">&#9889; Request Free Demo</button>
+        </form>
+        <div class="demo-cta__or">or</div>
+        <a href="#" class="btn btn-whatsapp" style="width:100%;justify-content:center;" target="_blank" rel="noopener" id="demo-form-wa-btn" data-config-link="whatsapp" data-msg-type="demo">&#128177; Chat on WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- BLOG -->
+<section class="blog" id="blog" aria-labelledby="blog-title">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label fade-up">Growth Guide</span>
+      <h2 class="section-title fade-up stagger-1" id="blog-title">Restaurant &amp; Cafe Growth Guide</h2>
+      <p class="section-subtitle fade-up stagger-2">Practical articles to help restaurant and cafe owners grow their business online.</p>
+    </div>
+    <div class="blog__grid">
+      <a href="blog/why-cafe-needs-website.html" class="blog-card fade-up stagger-1" aria-label="Read: Why Every Cafe Needs a Website in 2026">
+        <div class="blog-card__thumb" aria-hidden="true">&#9749;</div>
+        <div class="blog-card__body">
+          <div class="blog-card__category">Website Strategy</div>
+          <h3 class="blog-card__title">Why Every Cafe Needs a Website in 2026</h3>
+          <p class="blog-card__excerpt">Instagram is great, but it is not enough. Here is why a dedicated website makes a real difference for cafes today.</p>
+          <div class="blog-card__footer">
+            <span>5 min read</span>
+            <span class="blog-card__read-more">Read &#8594;</span>
+          </div>
+        </div>
+      </a>
+      <a href="blog/7-things-restaurant-website-needs.html" class="blog-card fade-up stagger-2" aria-label="Read: 7 Things Every Restaurant Website Needs">
+        <div class="blog-card__thumb" aria-hidden="true">&#127859;</div>
+        <div class="blog-card__body">
+          <div class="blog-card__category">Design Tips</div>
+          <h3 class="blog-card__title">7 Things Every Restaurant Website Needs</h3>
+          <p class="blog-card__excerpt">Most restaurant websites are missing at least 3 of these. Make sure yours has all of them before you launch.</p>
+          <div class="blog-card__footer">
+            <span>6 min read</span>
+            <span class="blog-card__read-more">Read &#8594;</span>
+          </div>
+        </div>
+      </a>
+      <a href="blog/restaurant-website-vs-instagram.html" class="blog-card fade-up stagger-3" aria-label="Read: Restaurant Website vs Instagram: Which Is Better?">
+        <div class="blog-card__thumb" aria-hidden="true">&#128247;</div>
+        <div class="blog-card__body">
+          <div class="blog-card__category">Strategy</div>
+          <h3 class="blog-card__title">Restaurant Website vs Instagram: Which Is Better?</h3>
+          <p class="blog-card__excerpt">A clear breakdown of what each platform does well — and why the best restaurants use both together.</p>
+          <div class="blog-card__footer">
+            <span>5 min read</span>
+            <span class="blog-card__read-more">Read &#8594;</span>
+          </div>
+        </div>
+      </a>
+      <a href="blog/restaurant-website-cost.html" class="blog-card fade-up stagger-4" aria-label="Read: How Much Does a Restaurant Website Cost?">
+        <div class="blog-card__thumb" aria-hidden="true">&#128176;</div>
+        <div class="blog-card__body">
+          <div class="blog-card__category">Pricing</div>
+          <h3 class="blog-card__title">How Much Does a Restaurant Website Cost?</h3>
+          <p class="blog-card__excerpt">An honest breakdown of restaurant website pricing in India — from DIY options to professional agencies.</p>
+          <div class="blog-card__footer">
+            <span>4 min read</span>
+            <span class="blog-card__read-more">Read &#8594;</span>
+          </div>
+        </div>
+      </a>
+      <a href="blog/how-to-create-online-menu.html" class="blog-card fade-up stagger-5" aria-label="Read: How to Create an Online Menu for a Restaurant">
+        <div class="blog-card__thumb" aria-hidden="true">&#128214;</div>
+        <div class="blog-card__body">
+          <div class="blog-card__category">Online Menu</div>
+          <h3 class="blog-card__title">How to Create an Online Menu for a Restaurant</h3>
+          <p class="blog-card__excerpt">Your menu is one of the most important parts of your website. Here is how to get it right.</p>
+          <div class="blog-card__footer">
+            <span>5 min read</span>
+            <span class="blog-card__read-more">Read &#8594;</span>
+          </div>
+        </div>
+      </a>
+      <a href="blog/restaurant-website-mistakes.html" class="blog-card fade-up stagger-6" aria-label="Read: 10 Restaurant Website Design Mistakes">
+        <div class="blog-card__thumb" aria-hidden="true">&#128683;</div>
+        <div class="blog-card__body">
+          <div class="blog-card__category">Design</div>
+          <h3 class="blog-card__title">10 Restaurant Website Design Mistakes That Lose Customers</h3>
+          <p class="blog-card__excerpt">Avoid these common mistakes that are costing restaurants real customers every single day.</p>
+          <div class="blog-card__footer">
+            <span>6 min read</span>
+            <span class="blog-card__read-more">Read &#8594;</span>
+          </div>
+        </div>
+      </a>
+      <a href="blog/get-more-customers-cafe.html" class="blog-card fade-up stagger-1" aria-label="Read: How to Get More Customers for Your Cafe">
+        <div class="blog-card__thumb" aria-hidden="true">&#127775;</div>
+        <div class="blog-card__body">
+          <div class="blog-card__category">Growth</div>
+          <h3 class="blog-card__title">How to Get More Customers for Your Cafe</h3>
+          <p class="blog-card__excerpt">Practical, low-cost strategies that cafe owners can implement this week to bring in more customers.</p>
+          <div class="blog-card__footer">
+            <span>7 min read</span>
+            <span class="blog-card__read-more">Read &#8594;</span>
+          </div>
+        </div>
+      </a>
+      <a href="blog/restaurant-website-on-budget.html" class="blog-card fade-up stagger-2" aria-label="Read: How to Build a Restaurant Website on a Budget">
+        <div class="blog-card__thumb" aria-hidden="true">&#128200;</div>
+        <div class="blog-card__body">
+          <div class="blog-card__category">Budget</div>
+          <h3 class="blog-card__title">How to Build a Restaurant Website on a Budget</h3>
+          <p class="blog-card__excerpt">You do not need to spend a fortune to get a great restaurant website. Here is how to do it affordably.</p>
+          <div class="blog-card__footer">
+            <span>5 min read</span>
+            <span class="blog-card__read-more">Read &#8594;</span>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+<!-- ABOUT -->
+<section class="about" id="about" aria-labelledby="about-title">
+  <div class="container">
+    <div class="about__inner">
+      <div class="fade-up">
+        <span class="section-label">Who We Are</span>
+        <h2 class="section-title" id="about-title">We Help Local Food Businesses Look Professional Online.</h2>
+        <p class="section-subtitle" style="margin-bottom:1.5rem;">We are a small web design team focused on one thing: building great websites for restaurants, cafes, bars, bakeries, and food businesses.</p>
+        <p style="font-size:.95rem;color:var(--clr-muted);line-height:1.75;margin-bottom:1.5rem;">We understand that restaurant owners are busy. You are managing your kitchen, your staff, your suppliers, and your customers — the last thing you need is a complicated, expensive tech project.</p>
+        <p style="font-size:.95rem;color:var(--clr-muted);line-height:1.75;margin-bottom:2rem;">That is why we keep the process simple, the communication clear, and the pricing honest. We have built websites for cafes, bars, and restaurants, and we design every site to reflect the real personality of the business — not a generic template.</p>
+        <a href="#contact" class="btn btn-primary fade-up stagger-1" id="about-contact-btn">Work With Us</a>
+        <div class="about__values">
+          <div class="about__value fade-up stagger-1">
+            <div class="about__value-icon" aria-hidden="true">&#127775;</div>
+            <div class="about__value-title">Focused Niche</div>
+            <div class="about__value-desc">We only work with food and hospitality businesses.</div>
+          </div>
+          <div class="about__value fade-up stagger-2">
+            <div class="about__value-icon" aria-hidden="true">&#128241;</div>
+            <div class="about__value-title">Mobile First</div>
+            <div class="about__value-desc">Every website is designed for mobile from the start.</div>
+          </div>
+          <div class="about__value fade-up stagger-3">
+            <div class="about__value-icon" aria-hidden="true">&#128172;</div>
+            <div class="about__value-title">Simple Process</div>
+            <div class="about__value-desc">We handle the technical side. You focus on your restaurant.</div>
+          </div>
+          <div class="about__value fade-up stagger-4">
+            <div class="about__value-icon" aria-hidden="true">&#128176;</div>
+            <div class="about__value-title">Honest Pricing</div>
+            <div class="about__value-desc">No hidden fees. Clear packages starting from Rs 3,999.</div>
+          </div>
+        </div>
+      </div>
+      <div class="about__visual fade-up stagger-2">
+        <div class="about__img-wrap" aria-hidden="true">&#127869;</div>
+        <div class="about__stat-cards">
+          <div class="about__stat">
+            <div class="about__stat-num">&#8377;3,999</div>
+            <div class="about__stat-label">Starting price for a professional website</div>
+          </div>
+          <div class="about__stat">
+            <div class="about__stat-num">4</div>
+            <div class="about__stat-label">Simple steps from brief to launch</div>
+          </div>
+          <div class="about__stat">
+            <div class="about__stat-num">100%</div>
+            <div class="about__stat-label">Mobile optimised, every time</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq" id="faq" aria-labelledby="faq-title">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label fade-up">Common Questions</span>
+      <h2 class="section-title fade-up stagger-1" id="faq-title">Frequently Asked Questions</h2>
+    </div>
+    <div class="faq__list" role="list">
+      <div class="faq-item fade-up stagger-1">
+        <div class="faq-item__q" role="button" tabindex="0" aria-expanded="false">
+          <span class="faq-item__q-text">How much does a restaurant website cost?</span>
+          <span class="faq-item__icon" aria-hidden="true">+</span>
+        </div>
+        <div class="faq-item__a"><p class="faq-item__a-text">Our pricing starts from Rs 3,999 for a single-page website and goes up to Rs 9,999+ for custom multi-page websites. The final price depends on the features you need. We are happy to discuss your requirements and give you a clear quote.</p></div>
+      </div>
+      <div class="faq-item fade-up stagger-2">
+        <div class="faq-item__q" role="button" tabindex="0" aria-expanded="false">
+          <span class="faq-item__q-text">How long does it take to build my website?</span>
+          <span class="faq-item__icon" aria-hidden="true">+</span>
+        </div>
+        <div class="faq-item__a"><p class="faq-item__a-text">Simple websites can be completed quickly once we have all the content from you — typically your menu, photos, business name, address, and contact details. The timeline depends on how quickly you can provide the information and how many revisions are needed.</p></div>
+      </div>
+      <div class="faq-item fade-up stagger-3">
+        <div class="faq-item__q" role="button" tabindex="0" aria-expanded="false">
+          <span class="faq-item__q-text">Can you add my menu to the website?</span>
+          <span class="faq-item__icon" aria-hidden="true">+</span>
+        </div>
+        <div class="faq-item__a"><p class="faq-item__a-text">Yes. All our packages include a menu section. You can share your menu in any format — a PDF, an image, a Google doc, or just a typed list — and we will design it into a clean, readable online menu.</p></div>
+      </div>
+      <div class="faq-item fade-up stagger-4">
+        <div class="faq-item__q" role="button" tabindex="0" aria-expanded="false">
+          <span class="faq-item__q-text">Can you add a WhatsApp button?</span>
+          <span class="faq-item__icon" aria-hidden="true">+</span>
+        </div>
+        <div class="faq-item__a"><p class="faq-item__a-text">Yes. We add a WhatsApp button to all our websites. When a customer clicks it, it opens a WhatsApp conversation directly with your number. You can use this for orders, reservations, or general inquiries.</p></div>
+      </div>
+      <div class="faq-item fade-up stagger-5">
+        <div class="faq-item__q" role="button" tabindex="0" aria-expanded="false">
+          <span class="faq-item__q-text">Can you connect Google Maps?</span>
+          <span class="faq-item__icon" aria-hidden="true">+</span>
+        </div>
+        <div class="faq-item__a"><p class="faq-item__a-text">Yes. We embed a Google Maps widget on every website so customers can see exactly where you are and get directions with one tap.</p></div>
+      </div>
+      <div class="faq-item fade-up stagger-6">
+        <div class="faq-item__q" role="button" tabindex="0" aria-expanded="false">
+          <span class="faq-item__q-text">Do I need any technical knowledge?</span>
+          <span class="faq-item__icon" aria-hidden="true">+</span>
+        </div>
+        <div class="faq-item__a"><p class="faq-item__a-text">No. You do not need to know anything about websites or technology. We handle everything — design, development, and deployment. You just share the content you want on the site and we take care of the rest.</p></div>
+      </div>
+      <div class="faq-item fade-up stagger-7">
+        <div class="faq-item__q" role="button" tabindex="0" aria-expanded="false">
+          <span class="faq-item__q-text">Can you redesign my existing website?</span>
+          <span class="faq-item__icon" aria-hidden="true">+</span>
+        </div>
+        <div class="faq-item__a"><p class="faq-item__a-text">Yes. If you already have a website but it looks outdated or does not work well on mobile, we can redesign it. We will keep the parts that work and improve what does not.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- CONTACT -->
+<section class="contact" id="contact" aria-labelledby="contact-title">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label fade-up">Get in Touch</span>
+      <h2 class="section-title fade-up stagger-1" id="contact-title">Let us Build Your Restaurant's Online Presence.</h2>
+      <p class="section-subtitle fade-up stagger-2" style="margin-inline:auto;">The easiest way to reach us is on WhatsApp. We respond quickly and are happy to answer any questions.</p>
+    </div>
+    <div class="contact__inner">
+      <div class="fade-up">
+        <div class="contact__channels">
+          <a href="#" class="contact-channel" target="_blank" rel="noopener" id="contact-wa-btn" aria-label="Chat on WhatsApp" data-config-link="whatsapp" data-msg-type="general">
+            <div class="contact-channel__icon contact-channel__icon--wa" aria-hidden="true">&#128177;</div>
+            <div>
+              <div class="contact-channel__label">WhatsApp (Preferred)</div>
+              <div class="contact-channel__value" data-config="whatsappNumberFormatted"></div>
+            </div>
+          </a>
+          <a href="#" class="contact-channel" target="_blank" rel="noopener" id="contact-ig-btn" aria-label="Follow on Instagram" data-config-link="instagram">
+            <div class="contact-channel__icon contact-channel__icon--ig" aria-hidden="true">&#128248;</div>
+            <div>
+              <div class="contact-channel__label">Instagram</div>
+              <div class="contact-channel__value" data-config="instagramUsername"></div>
+            </div>
+          </a>
+          <a href="#" class="contact-channel" id="contact-email-btn" aria-label="Send email" data-config-link="email">
+            <div class="contact-channel__icon contact-channel__icon--em" aria-hidden="true">&#9993;</div>
+            <div>
+              <div class="contact-channel__label">Email</div>
+              <div class="contact-channel__value" data-config="email"></div>
+            </div>
+          </a>
+        </div>
+        <div style="background:rgba(200,150,62,0.06);border:1px solid rgba(200,150,62,0.15);border-radius:var(--border-radius);padding:1.5rem;margin-top:1rem;">
+          <p style="font-size:.9rem;color:var(--clr-muted);line-height:1.7;">&#9889; <strong style="color:var(--clr-white);">Fastest response:</strong> WhatsApp us with your restaurant name and we will reply within hours. You can also request a free demo directly from there.</p>
+        </div>
+      </div>
+      <div class="contact__form-wrap fade-up stagger-2">
+        <h3 style="font-family:var(--font-serif);font-size:1.35rem;color:var(--clr-white);margin-bottom:1.5rem;">Send a Message</h3>
+        <form id="contact-form" novalidate aria-label="Contact form">
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="contact-name">Name *</label>
+              <input class="form-input" type="text" id="contact-name" name="name" placeholder="Your name" required autocomplete="name">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="contact-phone">Phone / WhatsApp *</label>
+              <input class="form-input" type="tel" id="contact-phone" name="phone" placeholder="+91 98765 43210" required autocomplete="tel">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="contact-restaurant">Restaurant / Business Name</label>
+            <input class="form-input" type="text" id="contact-restaurant" name="restaurant" placeholder="Your restaurant name">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="contact-message">Message *</label>
+            <textarea class="form-textarea" id="contact-message" name="message" placeholder="Tell us what you need..." required style="min-height:130px;"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-lg" style="width:100%;justify-content:center;" id="contact-submit-btn">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- FOOTER -->
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer__top">
+      <div>
+        <a href="/index.html" class="footer__brand-logo" aria-label="Plates and Pixels home">
+          <div class="nav__logo-icon" aria-hidden="true">&#127869;</div>
+          Plates &amp; Pixels
+        </a>
+        <p class="footer__brand-desc">We build modern, mobile-friendly websites for restaurants, cafes, bars, bakeries, and food businesses across India.</p>
+        <p style="font-size:.78rem;color:var(--clr-gold);letter-spacing:.06em;margin-bottom:1rem;">Restaurant Websites &#183; Digital Marketing &#183; SEO</p>
+        <div class="footer__social">
+          <a href="#" class="footer__social-link" target="_blank" rel="noopener" aria-label="Instagram" data-config-link="instagram">&#128247;</a>
+          <a href="#" class="footer__social-link" target="_blank" rel="noopener" aria-label="WhatsApp" data-config-link="whatsapp" data-msg-type="general">&#128177;</a>
+          <a href="#" class="footer__social-link" aria-label="Email" data-config-link="email">&#9993;</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer__nav-title">Navigation</div>
+        <nav class="footer__nav-links" aria-label="Footer navigation">
+          <a href="/index.html">Home</a>
+          <a href="/services/index.html">Services</a>
+          <a href="/portfolio/index.html">Portfolio</a>
+          <a href="/pricing/index.html">Pricing</a>
+          <a href="/blog/index.html">Blog</a>
+          <a href="/about/index.html">About</a>
+          <a href="/contact/index.html">Contact</a>
+        </nav>
+      </div>
+      <div>
+        <div class="footer__nav-title">Quick Links</div>
+        <nav class="footer__nav-links" aria-label="Quick links">
+          <a href="#demo">Get Free Demo</a>
+          <a href="#" target="_blank" rel="noopener" data-config-link="whatsapp" data-msg-type="general">Chat on WhatsApp</a>
+          <a href="/blog/index.html">All Blog Articles</a>
+          <a href="/sitemap.xml">Sitemap</a>
+          <a href="/privacy-policy/index.html">Privacy Policy</a>
+          <a href="/terms/index.html">Terms</a>
+        </nav>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="footer__copy">Copyright &copy; 2026 Plates &amp; Pixels. All rights reserved.</div>
+      <div class="footer__tagline">Restaurant Websites &bull; Digital Marketing &bull; SEO</div>
+    </div>
+  </div>
+</footer>
+
+<script src="/app.js" defer></script>
+</body>
+</html>
