@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const blogDir = path.join(__dirname, 'blog');
+const blogDir = path.join(__dirname, '../blog');
 const files = fs.readdirSync(blogDir).filter(f => f.endsWith('.html') && f !== 'index.html');
 
 console.log(`Found ${files.length} article files to process.`);

@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const blogDir = path.join(__dirname, 'blog');
+const blogDir = path.join(__dirname, '../blog');
 const files = fs.readdirSync(blogDir).filter(f => f.endsWith('.html'));
 
 console.log(`Processing ${files.length} blog files for header nav correction...`);

@@ -20,7 +20,7 @@ function getHtmlFiles(dir) {
   return results;
 }
 
-const rootDir = __dirname;
+const rootDir = path.join(__dirname, '..');
 const htmlFiles = getHtmlFiles(rootDir);
 
 console.log(`Found ${htmlFiles.length} HTML files to convert to absolute root-relative paths.`);
